@@ -18,7 +18,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or feedback, please contact [sagarwatwani8@gmail.com]
 
 ---
 
@@ -93,6 +93,44 @@ If no valid number can be placed, it backtracks and tries the next possibility f
 Termination:
 The puzzle is solved when no empty cells are left.
 If no solution exists, the program notifies the user.
+
+
+
+ Titanic dataset analysis project:
+
+ Project Workflow
+Data Loading:
+
+The dataset is loaded from a public GitHub link.
+Data Preprocessing:
+
+Handling missing values:
+Replace missing Age values with the median.
+Drop the Cabin column (too many missing values).
+Fill missing Embarked values with the mode.
+Encoding categorical variables:
+Map Sex to numeric values.
+One-hot encode Embarked.
+Standardize numerical features (Age, Fare).
+
+Model Training:
+
+Two models are trained:
+k-NN Classifier
+Decision Tree Classifier
+Models are trained on the full feature set as well as a subset (Pclass and Age) for visualization.
+
+Evaluation:
+
+Metrics used: Accuracy, Precision, Recall, F1-score.
+Models are evaluated on the testing set.
+Visualization:
+
+Decision boundaries are plotted for both models using the subset of features (Pclass and Age).
+
+
+License
+This project is open source and available under the MIT License.
 
 
 
