@@ -55,3 +55,47 @@ The genetic algorithm generates a population of guesses, selects the best ones, 
 How to Run the Game
 Clone the repository or copy the code into a Python script file (e.g., ai_genetic_guessing_game.py).
 
+
+
+
+
+
+
+Sudoku Solver
+This project is a Python implementation of a Sudoku Solver using the Backtracking Algorithm. The program takes a partially filled Sudoku board as input and fills it to solve the puzzle.
+
+Features
+Solves a standard 9x9 Sudoku grid.
+Uses backtracking to find a solution efficiently.
+Checks constraints for rows, columns, and 3x3 subgrids to ensure valid placements.
+Prints the solved Sudoku puzzle.
+
+Requirements
+This project requires Python 3.x. No additional libraries are needed.
+
+How It Works
+
+Algorithm Overview
+
+Empty Cell Search:
+The program searches for the first empty cell (denoted by 0).
+
+Validation:
+It checks if a number from 1 to 9 can be legally placed in the empty cell by verifying:
+The number is not already present in the same row.
+The number is not already present in the same column.
+The number is not already present in the corresponding 3x3 grid.
+
+Backtracking:
+If a valid number is placed, the algorithm recursively attempts to solve the rest of the grid.
+If no valid number can be placed, it backtracks and tries the next possibility for previous cells.
+
+Termination:
+The puzzle is solved when no empty cells are left.
+If no solution exists, the program notifies the user.
+
+
+
+
+
+
